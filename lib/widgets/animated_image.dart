@@ -27,10 +27,10 @@ class _AnimatedImageState extends State<AnimatedImage>
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset('assets/images/clouds.png'),
+        Image.asset('assets/images/clouds.png', width: 250, height: 250,),
         SlideTransition(
           position: _animation,
-          child: Image.asset('assets/images/rocket_person.png'),
+          child: Image.asset('assets/images/rocket_person.png', width: 250, height: 250,),
         ),
       ],
     );
